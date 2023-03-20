@@ -17,4 +17,11 @@ public class GreeterService : Greeter.GreeterBase
             Message = "Hello " + request.Name
         });
     }
+    //public override Task<GuessNumberResponse> GuessNumber(GuessNumberRequest request, ServerCallContext context)
+    //{
+    //    return Task.FromResult(new GuessNumberResponse()
+    //    {
+    //        Number = 5
+    //    });
+    //}
 }
