@@ -1,17 +1,48 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Update="Protos\greet.proto">
-      <GrpcServices>Server</GrpcServices>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Protos\**\*.proto" Pack="true" PackagePath="content\%(RecursiveDir)" />
-  </ItemGroup>
+    <ItemGroup>
+        <None Update="Protos\greet.proto">
+            <GrpcServices>Server</GrpcServices>
+        </None>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Protos/greet.proto">
+            <Pack>true</Pack>
+            <PackagePath>Contracts1</PackagePath>
+            <InculdeInPackage>true</InculdeInPackage>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+            <BuildAction>Content</BuildAction>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="Protos/greet.proto">
+            <Pack>true</Pack>
+            <PackagePath>Contracts2</PackagePath>
+            <InculdeInPackage>true</InculdeInPackage>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+            <BuildAction>Content</BuildAction>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="**\*.proto">
+            <Pack>true</Pack>
+            <PackagePath>content\%(RecursiveDir)</PackagePath>
+            <InculdeInPackage>true</InculdeInPackage>
+            <PackageCopyToOutput>true</PackageCopyToOutput>
+            <BuildAction>Content</BuildAction>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
 </Project>
