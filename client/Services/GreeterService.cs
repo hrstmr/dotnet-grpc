@@ -1,4 +1,3 @@
-using client;
 using Grpc.Core;
 
 namespace client.Services;
@@ -18,3 +17,20 @@ public class GreeterService : Greeter.GreeterBase
         });
     }
 }
+
+//public class ContractorService : Contractor.GreeterBase
+//{
+//    private readonly ILogger<ContractorService> _logger;
+//    public ContractorService(ILogger<ContractorService> logger)
+//    {
+//        _logger = logger;
+//    }
+
+//    public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
+//    {
+//        return Task.FromResult(new HelloReply
+//        {
+//            Message = "Hello " + request.Name
+//        });
+//    }
+//}

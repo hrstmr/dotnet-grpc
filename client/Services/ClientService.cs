@@ -4,7 +4,6 @@ public class ClientService
 {
     public void method()
     {
-        var x = new HelloRequest(
-            )
+        var x = new HelloRequest();
     }
 }

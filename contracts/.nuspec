@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <metadata>
+        <id>contracts</id>
+        <version>1.2.3</version>
+        <authors>Harshit Tomar</authors>
+        <description>Contains grpc contract</description>
+        
+        <contentFiles>
+            <files include="proto/**/*.proto" buildAction="None" copyToOutput="true" flatten="false" />
+            <!-- Embed image resources 
+            <files include="ContentFiles/greet.proto" buildAction="None" copyToOutput="true" flatten="true" />
+            <file src="ContentFiles/**" target="content/ContentFiles" />
+            <files include="any/any/images/dnf.png" buildAction="EmbeddedResource" />
+            <files include="any/any/images/ui.png" buildAction="EmbeddedResource" />
+
+            Embed all image resources under contentFiles/cs/ 
+            <files include="cs/**/*.png" buildAction="EmbeddedResource" />
+            
+
+            Copy config.xml to the root of the output folder  
+            <files include="cs/uap/config/config.xml" buildAction="None" copyToOutput="true" flatten="true" />
+            
+
+            Copy run.cmd to the output folder and keep the directory structure 
+            <files include="cs/commands/run.cmd" buildAction="None" copyToOutput="true" flatten="false" />
+            
+
+            Include everything in the scripts folder except exe files 
+            <files include="cs/net45/scripts/*" exclude="**/*.exe"  buildAction="None" copyToOutput="true" />
+            
+            -->
+        </contentFiles>
+    </metadata>
+</package>
+
+<!--
+
+<contentFiles>
+    <file src="ContentFiles\**" target="content\ContentFiles" />
+</contentFiles>
+-->

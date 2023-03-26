@@ -6,38 +6,22 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+
     <ItemGroup>
         <None Update="Protos\greet.proto">
             <GrpcServices>Server</GrpcServices>
         </None>
     </ItemGroup>
-    <ItemGroup>
-        <Content Include="Protos/greet.proto">
-            <Pack>true</Pack>
-            <PackagePath>Contracts1</PackagePath>
-            <InculdeInPackage>true</InculdeInPackage>
-            <PackageCopyToOutput>true</PackageCopyToOutput>
-            <BuildAction>Content</BuildAction>
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-        </Content>
-    </ItemGroup>
-    <ItemGroup>
-        <Content Include="Protos/greet.proto">
-            <Pack>true</Pack>
-            <PackagePath>Contracts2</PackagePath>
-            <InculdeInPackage>true</InculdeInPackage>
-            <PackageCopyToOutput>true</PackageCopyToOutput>
-            <BuildAction>Content</BuildAction>
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-            <CopyToPublishDirectory>Always</CopyToPublishDirectory>
-        </Content>
-    </ItemGroup>
 
-    <ItemGroup>
+</Project>
+
+  <!--
+  
+          <ItemGroup>
         <Content Include="**\*.proto">
             <Pack>true</Pack>
             <PackagePath>content\%(RecursiveDir)</PackagePath>
+            <PackageFlatten>true</PackageFlatten>
             <InculdeInPackage>true</InculdeInPackage>
             <PackageCopyToOutput>true</PackageCopyToOutput>
             <BuildAction>Content</BuildAction>
@@ -45,4 +29,4 @@
             <CopyToPublishDirectory>Always</CopyToPublishDirectory>
         </Content>
     </ItemGroup>
-</Project>
+      --> 
