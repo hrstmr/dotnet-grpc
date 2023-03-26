@@ -1,3 +1,4 @@
+            <!--
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
     <metadata>
@@ -8,7 +9,7 @@
         
         <contentFiles>
             <files include="proto/**/*.proto" buildAction="None" copyToOutput="true" flatten="false" />
-            <!-- Embed image resources 
+            Embed image resources 
             <files include="ContentFiles/greet.proto" buildAction="None" copyToOutput="true" flatten="true" />
             <file src="ContentFiles/**" target="content/ContentFiles" />
             <files include="any/any/images/dnf.png" buildAction="EmbeddedResource" />
@@ -29,10 +30,10 @@
             Include everything in the scripts folder except exe files 
             <files include="cs/net45/scripts/*" exclude="**/*.exe"  buildAction="None" copyToOutput="true" />
             
-            -->
         </contentFiles>
     </metadata>
 </package>
+            -->
 
 <!--
 

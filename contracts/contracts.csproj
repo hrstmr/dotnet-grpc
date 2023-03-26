@@ -1,16 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
 
     <ItemGroup>
-        <None Update="Protos\greet.proto">
-            <GrpcServices>Server</GrpcServices>
-        </None>
+        <Protobuf Include="Protos\contract.proto" GrpcServices="Server" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Grpc.AspNetCore" Version="2.52.0" />
+        <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.52.0" />
     </ItemGroup>
 
 </Project>

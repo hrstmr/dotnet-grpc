@@ -25,3 +25,13 @@ public class GreeterService : Greeter.GreeterBase
     //    });
     //}
 }
+
+public class GreetersService : contracts.Class1
+{
+    private readonly ILogger<GreeterService> _logger;
+    public GreetersService(ILogger<GreeterService> logger)
+    {
+        _logger = logger;
+    }
+
+}

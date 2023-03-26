@@ -1,13 +1,13 @@
 syntax = "proto3";
 
-option csharp_namespace = "common";
+option csharp_namespace = "Mycontracts";
 
-package greet;
+package contract;
 
 // The greeting service definition.
-service Greeter {
+service Contractor {
   // Sends a greeting
-  rpc SayHello(HelloRequest) returns (HelloReply);
+  rpc SayHelloCont(HelloRequest) returns (HelloReply);
   //   rpc GuessNumber(GuessNumberRequest) returns (GuessNumberResponse);
 }
 
